@@ -1,0 +1,30 @@
+# Define functions
+def print_list(list):
+  for item in list:
+    print(item)
+    
+# Working with collections  
+shopping_list = []
+
+# Accepting user input
+print("Shopping List")
+
+max_items = 5
+current_item = 1
+  
+while current_item <= max_items:
+
+  name = input("Enter item name: ")
+  quantity = input("Enter quantity: ")
+  
+  # Add item to list
+  shopping_list.append(f"{name} ({quantity})")
+
+  current_item += 1
+
+ 
+# Printing output  
+print(f"\nYour Shopping List:")
+print_list(shopping_list)
+
+print(f"\nMaximum items ({max_items}) added.")
